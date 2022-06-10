@@ -7,6 +7,9 @@ import Card from './components/Card'
 import './sass/main.scss'
 import { data } from './data'
 import CTA from './components/CTA'
+import Footer from './components/Footer'
+import List from './components/List'
+import ListItem from './components/ListItem'
 
 function App() {
 	return (
@@ -36,6 +39,12 @@ function App() {
 				/>
 			</CardsContainer>
 			<CTA />
+
+			<Footer>
+				<List>
+					<ListItem />
+				</List>
+			</Footer>
 		</div>
 	)
 }
