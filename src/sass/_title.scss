@@ -1,0 +1,46 @@
+.landing{
+    display: grid;
+    grid-template-columns: 2rem 1fr 2rem;
+    grid-template-areas:    '. image image'
+                            '. info .';
+    width: 100%;
+    row-gap: 3rem;
+
+    &-title__info{
+        grid-area: info;
+
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__image{
+        grid-area: image;
+        margin-right: -140px;
+    }
+
+    &-title__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    &-title__title{
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: $clr-dark-violet;
+        line-height: 1.1;
+        text-align: center;
+    }
+
+    &-title__subtitle{
+        font-size: 1rem;
+        font-weight: 500;
+        color: $clr-grayish-violet;
+        text-align: center;
+        margin-inline: auto;
+        width: 100%;
+    }
+
+
+}

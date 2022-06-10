@@ -1,0 +1,66 @@
+.cards-container{
+    display: grid;
+    grid-template-columns: 2rem 1fr 2rem;
+    grid-template-areas:    '. card1 .'
+                            '. card2 .'
+                            '. card3 .';
+    row-gap: 1rem;
+    .card{
+        position: relative;
+        padding: 1.5rem;
+        text-align: center;
+        margin-top: 5rem;
+        background-color: #fff;
+        border-radius: .2rem;
+        z-index: 3;
+        
+        &-icon{
+            position: absolute;
+            background-color: $clr-dark-violet;
+            padding: 1.4rem;
+            border-radius: 100%;
+            top: -2.4rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        h2{
+            margin-top: 4rem;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: $clr-Vdark-violet;
+            margin-bottom: 1rem;
+        }
+        
+        p{
+            font-size: 0.9rem;
+            color: $clr-grayish-violet;
+        }
+    }
+    .first{
+        grid-area: card1;
+    }
+    .second{
+        grid-area: card2;
+        z-index: 1;
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 7px;
+            right: 50%;
+            height: 100px;
+            top: -100px;
+            z-index: 0;
+            transform: rotate(180deg) translateX(-50%);
+            background-color: $clr-cyan;
+        }
+    }
+    .third{
+        grid-area: card3;
+        z-index: 0;
+
+        &::before{
+            @extend .second::before;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import './config';
+@import './variables';
+@import './button';
+@import './navbar';
+@import './title';
+@import './shortenInput';
+@import './stats';
+@import './cardsContainer';
+@import './cta';
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    font-family: $ff;
+    font-size: $fs;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #f0f1f6;
+}
+
+#root{
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    background-color: #f0f1f6;
+}
