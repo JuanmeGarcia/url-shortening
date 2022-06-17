@@ -7,4 +7,9 @@
     background-color: $clr-cyan;
     border: 1px solid transparent;
     font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.button:hover{
+    transform: scale(1.05);
 }

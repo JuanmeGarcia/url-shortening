@@ -7,6 +7,9 @@
     align-items: center;
     background-color: $clr-dark-violet;
     background-image: url('../assets/image/bg-boost-mobile.svg');
+    background-size: cover;
+    background-position-y: -413px;
+    
 
     &-info{
         display: flex;
